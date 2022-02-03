@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +12,7 @@ import { LinkIconComponent } from './components/icons/link-icon/link-icon.compon
 import { LightbulbIconComponent } from './components/icons/lightbulb-icon/lightbulb-icon.component';
 import { NavLinkComponent } from './components/nav-link/nav-link.component';
 import { LinklistComponent } from './pages/linklist/linklist.component';
+import { IdeasComponent } from './pages/ideas/ideas.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { LinklistComponent } from './pages/linklist/linklist.component';
     LinkIconComponent,
     LightbulbIconComponent,
     NavLinkComponent,
-    LinklistComponent
+    LinklistComponent,
+    IdeasComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

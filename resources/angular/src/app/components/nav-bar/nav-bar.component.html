@@ -2,10 +2,10 @@
     <div class="inner flex">
         <div class="upper flex">
             <div class="toggle-wrapper"><button class="toggle" (click)="toggleNav()"><app-burger-icon></app-burger-icon></button></div>
-            <app-nav-link [showLabel]="navOpen" [linkName]="'Linkliste'"><app-link-icon></app-link-icon></app-nav-link>
-            <app-nav-link [showLabel]="navOpen" [linkName]="'Projektideen'"><app-lightbulb-icon></app-lightbulb-icon></app-nav-link>
-            <app-nav-link [showLabel]="navOpen" [linkName]="'Lorem ipsum'"><app-link-icon></app-link-icon></app-nav-link>
-            <app-nav-link [showLabel]="navOpen" [linkName]="'Dolor sit'"><app-lightbulb-icon></app-lightbulb-icon></app-nav-link>
+            <app-nav-link [showLabel]="navOpen" [url]="'linklist'" [linkName]="'Linkliste'"><app-link-icon></app-link-icon></app-nav-link>
+            <app-nav-link [showLabel]="navOpen" [url]="'ideas'" [linkName]="'Projektideen'"><app-lightbulb-icon></app-lightbulb-icon></app-nav-link>
+            <app-nav-link [showLabel]="navOpen" [url]="'lorem'" [linkName]="'Lorem ipsum'"><app-link-icon></app-link-icon></app-nav-link>
+            <app-nav-link [showLabel]="navOpen" [url]="'ipsum'" [linkName]="'Dolor sit'"><app-lightbulb-icon></app-lightbulb-icon></app-nav-link>
         </div>
         <div class="logo">test</div>
     </div>

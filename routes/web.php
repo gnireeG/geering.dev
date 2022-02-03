@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LinklistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/linklist/list', [LinklistController::class, 'list'])->middleware(['auth']);
+Route::post('/linklist/store', [LinklistController::class, 'store'])->middleware(['auth']);
 
 Route::get('/home/linklist', function(){
     return file('../public/home/index.html');

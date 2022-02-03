@@ -4,6 +4,10 @@
     position: relative
     white-space: nowrap
     transition: width var(--transition-speed)
+    &.active
+        color: var(--text-on-bg-lighter)
+        .icon
+            background-color: var(--bg-lighter)
     .icon
         padding: 0.5rem
         transition: background var(--transition-speed)

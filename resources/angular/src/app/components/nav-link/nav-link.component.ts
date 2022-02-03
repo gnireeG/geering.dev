@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavLinkComponent implements OnInit {
 
-  @Input() linkName: String = '';
+  @Input() linkName: string = '';
   @Input() showLabel: Boolean = false;
+  @Input() url: string = '';
 
   constructor() { }
 

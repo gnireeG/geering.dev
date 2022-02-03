@@ -1,1 +1,14 @@
-<p>linklist works!</p>
+<div class="page">
+    <h1>Linkliste</h1>
+    <a *ngFor="let link of links" [href]="link.url" target="_blank" class="link mb-4">
+        <h4 class="my-0">{{link.name}}</h4>
+        <p class="my-0">{{link.description}}</p>
+    </a>
+    <label class="block mt-2" for="name">Name</label>
+    <input class="block" [(ngModel)]="inputName" type="text" id="name">
+    <label class="block mt-2" for="url">URL</label>
+    <input class="block" [(ngModel)]="inputUrl" type="text" id="url">
+    <label class="block mt-2" for="description">Description</label>
+    <input class="block mb-4" [(ngModel)]="inputDescription" type="text" id="description">
+    <button (click)="saveLink()" class="btn primary">Speichern</button>
+</div>
