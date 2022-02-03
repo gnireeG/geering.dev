@@ -1,0 +1,5 @@
+<a href="#" class="link">
+    <div class="icon"><ng-content></ng-content></div>
+    <div class="label" [class.show]="showLabel"><span>{{linkName}}</span></div>
+    <div [class.hidden]="showLabel" class="tooltip">{{linkName}}</div>
+</a>

@@ -1,0 +1,34 @@
+.navbar
+    background-color: var(--bg)
+    color: var(--text-on-bg)
+    height: 100vh
+    position: fixed
+    padding: 0.5rem
+    width: 4rem
+    transition: width var(--transition-speed)
+    .toggle-wrapper
+        display: flex
+        justify-content: flex-end
+        padding: 0.5rem
+        .toggle
+            transition: transform var(--transition-speed)
+    &.open
+        width: 14rem
+        .toggle-wrapper
+            .toggle, .toggle:active
+                transform: rotate(90deg) scale(.9)
+    .flex
+        display: flex
+    .inner
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        .toggle
+            &:active
+                transform: scale(.9)
+    .upper
+        flex-direction: column
+        > *
+            margin-bottom: .25rem
+    .logo
+        padding: 0.5rem
